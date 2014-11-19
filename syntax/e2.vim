@@ -36,7 +36,7 @@ syn keyword e2Typ complex quaternion ranger void angle
 syn keyword e2Conditional if elseif else
 syn keyword e2Loop while for foreach continue break
 
-syn keyword e2Key function
+syn keyword e2Key function return
 
 hi def link e2Comment Comment
 hi def link e2Str String
