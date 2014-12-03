@@ -8,50 +8,50 @@ endif
 syntax spell notoplevel
 syntax case match
 
-syn region e2Block start="{" end="}" transparent fold
-syn match e2Comment "#.*$" contains=@Spell,e2TODO
-syn region e2Comment start="#\[" end="\]#" fold contains=@Spell,e2TODO
-syn keyword e2Todo TODO FIXME XXX contained
+syntax region e2Block start="{" end="}" transparent fold
+syntax match e2Comment "#.*$" contains=@Spell,e2TODO
+syntax region e2Comment start="#\[" end="\]#" fold contains=@Spell,e2TODO
+syntax keyword e2Todo TODO FIXME XXX contained
 
-syn region e2Str start=/"/ end=/"/ skip=/[^\\]\\"/ contains=@Spell
+syntax region e2Str start=/"/ end=/"/ skip=/[^\\]\\"/ contains=@Spell
 
-syn match e2Num "\d\+"
-syn match e2Num "\d\+\.\d\+"
+syntax match e2Num "\d\+"
+syntax match e2Num "\d\+\.\d\+"
 
-syn match e2Func "[a-zA-Z_0-9]\+(\@="
-" syn match e2ID "[A-Z][a-zA-Z_0-9]*"
+syntax match e2Func "[a-zA-Z_0-9]\+(\@="
+" syntax match e2ID "[A-Z][a-zA-Z_0-9]*"
 
-syn match e2At "^@name"
-syn match e2At "^@model"
-syn match e2At "^@trigger"
-syn match e2At "^@autoupdate"
-syn match e2At "^@inputs"
-syn match e2At "^@outputs"
-syn match e2At "^@persist"
+syntax match e2At "^@name"
+syntax match e2At "^@model"
+syntax match e2At "^@trigger"
+syntax match e2At "^@autoupdate"
+syntax match e2At "^@inputs"
+syntax match e2At "^@outputs"
+syntax match e2At "^@persist"
 
-syn match e2PreProc "#ifdef"
-syn match e2PreProc "#else"
-syn match e2PreProc "#endif"
+syntax match e2PreProc "#ifdef"
+syntax match e2PreProc "#else"
+syntax match e2PreProc "#endif"
 
-syn keyword e2Typ number normal string entity vector2 vector vector
-syn keyword e2Typ matrix2 matrix matrix4 table array bone wirelink
-syn keyword e2Typ complex quaternion ranger void angle
-syn keyword e2Conditional if elseif else
-syn keyword e2Loop while for foreach continue break
+syntax keyword e2Typ number normal string entity vector2 vector vector
+syntax keyword e2Typ matrix2 matrix matrix4 table array bone wirelink
+syntax keyword e2Typ complex quaternion ranger void angle
+syntax keyword e2Conditional if elseif else
+syntax keyword e2Loop while for foreach continue break
 
-syn keyword e2Key function return
+syntax keyword e2Key function return
 
-hi def link e2Comment Comment
-hi def link e2Todo Todo
-hi def link e2Str String
-hi def link e2Num Number
-hi def link e2Func Function
-" hi def link e2ID Identifier
-hi def link e2At PreProc
-hi def link e2Typ Type
-hi def link e2Conditional Conditional
-hi def link e2Loop Repeat
-hi def link e2Key Keyword
+highlight default link e2Comment Comment
+highlight default link e2Todo Todo
+highlight default link e2Str String
+highlight default link e2Num Number
+highlight default link e2Func Function
+" highlight default link e2ID Identifier
+highlight default link e2At PreProc
+highlight default link e2Typ Type
+highlight default link e2Conditional Conditional
+highlight default link e2Loop Repeat
+highlight default link e2Key Keyword
 
 if !exists("b:current_syntax")
     let b:current_syntax = "e2"
