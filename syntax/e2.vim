@@ -19,7 +19,7 @@ syntax match e2Num "\d\+"
 syntax match e2Num "\d\+\.\d\+"
 
 syntax match e2Func "[a-zA-Z_0-9]\+(\@="
-" syntax match e2ID "[A-Z][a-zA-Z_0-9]*"
+syntax match e2ID "[A-Z][a-zA-Z_0-9]*"
 
 syntax match e2At "^@name"
 syntax match e2At "^@model"
@@ -46,7 +46,7 @@ highlight default link e2Todo Todo
 highlight default link e2Str String
 highlight default link e2Num Number
 highlight default link e2Func Function
-" highlight default link e2ID Identifier
+highlight default link e2ID Normal
 highlight default link e2At PreProc
 highlight default link e2Typ Type
 highlight default link e2Conditional Conditional
