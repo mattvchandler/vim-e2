@@ -39,7 +39,7 @@ syntax keyword e2Typ complex quaternion ranger void angle
 syntax keyword e2Conditional if elseif else
 syntax keyword e2Loop while for foreach continue break
 
-syntax keyword e2Key function return
+syntax keyword e2Key function return local
 
 highlight default link e2Comment Comment
 highlight default link e2Todo Todo
