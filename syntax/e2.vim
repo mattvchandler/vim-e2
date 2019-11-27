@@ -32,6 +32,7 @@ syntax match e2At "^@persist"
 syntax match e2PreProc "#ifdef"
 syntax match e2PreProc "#else"
 syntax match e2PreProc "#endif"
+syntax match e2PreProc "#include"
 
 syntax keyword e2Typ number normal string entity vector2 vector vector
 syntax keyword e2Typ matrix2 matrix matrix4 table array bone wirelink
@@ -48,6 +49,7 @@ highlight default link e2Num Number
 highlight default link e2Func Function
 highlight default link e2ID Normal
 highlight default link e2At PreProc
+highlight default link e2PreProc PreProc
 highlight default link e2Typ Type
 highlight default link e2Conditional Conditional
 highlight default link e2Loop Repeat
