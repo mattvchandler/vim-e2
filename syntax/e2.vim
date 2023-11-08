@@ -28,6 +28,7 @@ syntax match e2At "^@autoupdate"
 syntax match e2At "^@inputs"
 syntax match e2At "^@outputs"
 syntax match e2At "^@persist"
+syntax match e2At "^@strict"
 
 syntax match e2PreProc "#ifdef"
 syntax match e2PreProc "#else"
