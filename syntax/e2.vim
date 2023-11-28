@@ -37,11 +37,11 @@ syntax match e2PreProc "#include"
 
 syntax keyword e2Typ number normal string entity vector2 vector vector4
 syntax keyword e2Typ matrix2 matrix matrix4 table array bone wirelink
-syntax keyword e2Typ complex quaternion ranger void angle
+syntax keyword e2Typ complex quaternion ranger void angle function
 syntax keyword e2Conditional if elseif else switch case default
 syntax keyword e2Loop while for foreach continue break
 
-syntax keyword e2Key function return local event
+syntax keyword e2Key function return local event let const
 
 highlight default link e2Comment Comment
 highlight default link e2Todo Todo
